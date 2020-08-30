@@ -38,3 +38,13 @@ class Solution:
             if ss<=-2**31:return 0
         elif ss>2**31: return 0
         return ss
+    
+    def isPalindrome(self, x: int) -> bool:
+        if x<0:
+            return False
+        else:
+            new_x=int(str(x)[::-1])
+            if new_x==x:
+                return True
+            else:
+                return False
